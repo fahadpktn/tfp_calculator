@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Calculator</h1>
+  <p><b></b>Welcome</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="home.html">Calculator</a>
+  
+ 
+</div>
+<div>
+    <h1>When to use</h1> 
+    <p>
+        
+Use the calculator block when you want to perform calculations inside your form. You will always need one or more operations to perform the needed calculations. For example:
+
+Add up the scores of correct given answers in a quiz;
+Subtract a discount in a quote form;
+Multiply a price of a product with the entered amount;
+Divide a value in a formula.
+These are just some examples. Basically you can calculate anything you want with the calculator block. Please have a look at our calculator features overview to see everything you can do with the calculator block.
+    </p>
+    <br>
+    <h1>How to use</h1>
+    <p>
+In the article you're reading now we describe how to manage operations in your calculator blocks. For global instructions about the calculator block, please have a look at this article.
+
+Each calculation block starts with an empty list of Operations. These operations are the core of the calculator and determine what this block will calculate. Each operation is a step in your calculation. You can add as many operations as you need.
+    </p>
+    <br>
+    <h1>
+    Operations
+
+    </h1>
+    <p>
+After you added the starting variable, you can perform all kinds of calculation operations to that. You can add unlimited operations by clicking the  button at the bottom of the Operations list. The following operations are available:
+
+ Add - Add up a value to the outcome of the previous operation;
+ Subtract - Subtract a value from the outcome of the previous operation;
+ Multiply - Multiply the outcome of the previous operation with a value;
+ Divide - Divide the outcome of the previous operation with a value;
+ Equal - Equal the calculator with a value.
+    </p>
+</div>
+
+
+
+
+</body>
+</html>
